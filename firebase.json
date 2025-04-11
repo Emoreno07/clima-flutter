@@ -1,0 +1,21 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "clima3ds",
+          "appId": "1:529723981274:android:31fad93733e3c66157d4e3",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "clima3ds",
+          "configurations": {
+            "android": "1:529723981274:android:31fad93733e3c66157d4e3"
+          }
+        }
+      }
+    }
+  }
+}
