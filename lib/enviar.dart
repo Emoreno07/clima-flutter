@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class EnviarDados extends StatefulWidget {
+  
   const EnviarDados({super.key});
 
   @override
@@ -67,6 +68,7 @@ class _EnviarDadosState extends State<EnviarDados> {
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               TextField(
+                
                 controller: temperaturaController,
                   decoration: InputDecoration(
                 labelText: "Temperatura",

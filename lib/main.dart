@@ -44,7 +44,7 @@ class NavState extends State<Nav> {
   List<Widget> pages = [
     TelaClima(),
     Historico(),
-    EnviarDados()
+    EnviarDados(),
   ];
   int _selectedIndex = 0;
   @override

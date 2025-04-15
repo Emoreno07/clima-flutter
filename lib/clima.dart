@@ -1,6 +1,6 @@
 class Clima{
-   int? temperatura;
-   int? umidade;
+   double? temperatura;
+   double? umidade;
    String ? data;
   Clima({
     this.temperatura,

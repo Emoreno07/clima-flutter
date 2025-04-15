@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -37,8 +36,9 @@ class TelaClimaState extends State<TelaClima> {
       setState(() {
         clima.temperatura = latestValue["temperatura"];
         clima.umidade = latestValue["umidade"];
-        DateTime date = DateTime.fromMicrosecondsSinceEpoch(latestValue["data"].microsecondsSinceEpoch);
-        clima.data = "data : ${date.day}/${date.month}/${date.year}";  
+        DateTime date = DateTime.fromMicrosecondsSinceEpoch(latestValue["data"].microsecondsSinceEpoch)
+        ;
+        clima.data = "data : ${date.day}/${date.month < 10 ? "0" : ""}${date.month}/${date.year} - ${date.hour}:${date.minute < 10 ? "0" : ""}${date.minute}";  
       });
     });
   }
